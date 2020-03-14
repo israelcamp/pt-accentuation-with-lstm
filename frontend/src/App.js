@@ -28,12 +28,6 @@ function App() {
   const [transformed, setTransformed] = useState(
     "O apartamento não pegou fogo."
   );
-  // const original =
-  //   "o apartamento nao pegou fogo, mas ficou alagado. o homem foi para o cemiterio.";
-  // const transformed = "A casa é minha";
-
-  // const resp = sendWebRequest("http://127.0.0.1:5000/", "POST", data);
-  // resp.then(r => setTransformed(r.result.predicted_text));
 
   const onSend = () => {
     if (original.length > 5) {
@@ -52,7 +46,7 @@ function App() {
           onChange={e => setOriginal(e.target.value)}
           value={original}
         ></textarea>
-        <button type="button" onClick={onSend}>
+        <button type="button" onClick={onSend} disabled={original.length > 5}>
           ENVIAR
         </button>
         {transformed === null ? (
