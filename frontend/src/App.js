@@ -43,10 +43,13 @@ function App() {
       <div className="TextBox">
         <textarea
           className="InputArea"
-          onChange={e => setOriginal(e.target.value)}
+          onChange={e => {
+            setOriginal(e.target.value);
+            setTransformed(null);
+          }}
           value={original}
         ></textarea>
-        <button type="button" onClick={onSend} disabled={original.length > 5}>
+        <button type="button" onClick={onSend} disabled={original.length < 5}>
           ENVIAR
         </button>
         {transformed === null ? (
