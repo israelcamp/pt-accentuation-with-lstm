@@ -12,7 +12,7 @@ function TextHigh({ original, transformed }) {
           </React.Fragment>
         ) : (
           <React.Fragment key={v + i}>
-            <font color="#c94c4c">{v}</font>
+            <font color="#3e4444">{v}</font>
           </React.Fragment>
         )
       )}

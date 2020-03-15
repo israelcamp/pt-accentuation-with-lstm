@@ -75,7 +75,7 @@ class ModelHandler:
         output_size = len(self.pchange_chars)
         decoder = RNN(input_size, hidden_size, output_size, n_layers)
         decoder.load_state_dict(torch.load(
-            'model.ckp', map_location=self.device))
+            'model_good.ckp', map_location=self.device))
         return decoder
 
     def remove_accents(self, s):

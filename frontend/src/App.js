@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TextHighlighter from "./text-high";
 import "./App.css";
 
 function sendWebRequest(url, method, objectToSend, headers = null) {
   return fetch(url, {
-    method: "POST", // *GET, POST, PUT, DELETE, etc.
-    // headers: {
-    //   ContentType: "application/json"
-    // },
+    method: "POST",
     body: objectToSend
   })
     .then(async response => {

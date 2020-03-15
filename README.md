@@ -1,3 +1,4 @@
 # Portuguese Accentuation with LSTM
 
-- [WikiNER PT Dataset](https://figshare.com/articles/Learning_multilingual_named_entity_recognition_from_Wikipedia/5462500)
+- [Deployment](https://towardsdatascience.com/how-to-deploy-a-machine-learning-model-on-aws-lambda-24c36dcaed20)
+- [fast.ai AWS Lambda](https://course.fast.ai/deployment_aws_lambda.html)
